@@ -11,10 +11,14 @@ public class Converter {
 
     public static void main(String[] args) {
         int money = 140;
-        double euro = Converter.rubleToEuro(money);
-        System.out.println(money + " rubles are " + euro + " euro.");
-        double dollar = Converter.rubleToDollar(money);
-        System.out.println(money + " rubles are " + dollar + " dollar");
+        double expectedEuro = 2.0;
+        double outEuro = Converter.rubleToEuro(money);
+        boolean passedEuro = expectedEuro == outEuro;
+        double expectedDollar = 2.0;
+        double outDollar = Math.round(Converter.rubleToDollar(money));
+        boolean passedDollar = expectedDollar == outDollar;
+        System.out.println(money + " rubles are " + outEuro + " euro. Test result: " + passedEuro);
+        System.out.println(money + " rubles are " + outDollar + " dollar. Test result: " + passedDollar);
     }
 }
 
