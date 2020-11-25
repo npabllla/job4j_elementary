@@ -8,12 +8,13 @@ public class TriangleTest {
 
     @Test
     public void whenExist() {
-        boolean result = Triangle.exist(3,4,5);
+        boolean result = Triangle.exist(3, 4, 5);
         assertThat(result, is(true));
     }
+
     @Test
-    public void whenNotExist(){
-        boolean result = Triangle.exist(1,1,8456);
+    public void whenNotExist() {
+        boolean result = Triangle.exist(1, 1, 8456);
         assertThat(result, is(false));
     }
 }

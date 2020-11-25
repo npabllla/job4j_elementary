@@ -7,5 +7,5 @@ public class Max {
     }
 
     public static void main(String[] args) {
-        System.out.println(max(11,56));    }
+        System.out.println(max(11, 56));    }
 }
