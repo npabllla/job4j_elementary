@@ -18,7 +18,7 @@ public class CheckTest {
     @Test
     public void whenAllElementsDifferent() {
         boolean[] input = new boolean[] {true, false, true};
-        boolean expect = true;
+        boolean expect = false;
         boolean result = Check.mono(input);
         assertThat(result, is(expect));
     }
