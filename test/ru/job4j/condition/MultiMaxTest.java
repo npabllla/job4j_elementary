@@ -22,4 +22,10 @@ public class MultiMaxTest {
         int result = MultiMax.max(-10, -5, -1);
         assertThat(result, is(-1));
     }
+
+    @Test
+    public void whenEachElementMax() {
+        int result = MultiMax.max(-10, -10, -10);
+        assertThat(result, is(-10));
+    }
 }
