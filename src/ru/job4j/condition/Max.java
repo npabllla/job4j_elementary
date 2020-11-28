@@ -1,11 +1,11 @@
 package ru.job4j.condition;
 
 public class Max {
-    public static int max(int left, int right) {
-        int result = left > right ? left : right;
-        return result;
+    public double max(double first, double second) {
+     return first > second ? first : second;
     }
 
-    public static void main(String[] args) {
-        System.out.println(max(11, 56));    }
+    public double max(double first, double second, double third) {
+        return max(first, max(second, third));
+    }
 }
