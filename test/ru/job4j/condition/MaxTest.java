@@ -32,4 +32,18 @@ public class MaxTest {
         int res = (int) number.max(10, 10, 10);
         assertThat(res, is(10));
     }
+
+    @Test
+    public  void whenMax10to10to10to10Then10() {
+        Max number = new Max();
+        int res = (int) number.max(10, 10, 10, 10);
+        assertThat(res, is(10));
+    }
+
+    @Test
+    public  void whenMax10to10to10to15Then15() {
+        Max number = new Max();
+        int res = (int) number.max(10, 10, 10, 15);
+        assertThat(res, is(15));
+    }
 }
